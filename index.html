@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      td {
+        word-wrap: break-word;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mx-auto mt-5" style="max-width: 700px">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter TO-DO"
+              aria-label="Recipient's username"
+              id="todoInput"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn text-white btn-info" type="button" id="addTodo">
+              Add Todo
+            </button>
+          </div>
+
+          <div class="display">
+            <table class="table row1">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">TO-DO</th>
+                  <th scope="col ">Action</th>
+                </tr>
+              </thead>
+              <tbody id="records">
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>Take a cat for walk</td>
+                  <td>
+                    <i class="btn btn-info text-white fa fa-edit mx-2"></i>
+                    <i class="btn btn-danger text-white fa fa-trash"></i>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
